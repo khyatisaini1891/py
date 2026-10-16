@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+
+months = [1, 2, 3, 4, 5]
+
+sales_2025 = [20, 30, 25, 40, 50]
+sales_2026 = [25, 35, 40, 45, 60]
+
+plt.plot(months, sales_2025, label="2025", marker='o')
+plt.plot(months, sales_2026, label="2026", marker='s')
+
+plt.title("Sales Comparison")
+plt.xlabel("Month")
+plt.ylabel("Sales")
+
+plt.legend()
+plt.grid(True)
+plt.show()
